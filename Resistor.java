@@ -23,7 +23,6 @@ public class Resistor {
         else{
             i = i;
         }
-
         return i;
     }
 
@@ -41,9 +40,13 @@ public class Resistor {
     }
 
     public static void main(String[] args){
+        
         Resistor r1, r2;
+        
         System.out.println("Creating a 50 Ohm resistor (r1)");
+        
         r1 = new Resistor(50.0);
+        
         System.out.println("Its resistance is " + r1.getR() + " Ohms");
 
         System.out.println("Its current is " + r1.getI() + " Amps");
