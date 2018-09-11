@@ -4,12 +4,10 @@ public class Resistor {
 
     public Resistor(double resistance){
         r = resistance;
-        this.r = r;
     }
 
     public void setI(double current) {
         i = current;
-        this.i = i;
     }
 
     public void setV(double voltage) {
