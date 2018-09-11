@@ -1,6 +1,5 @@
 public class Resistor {
     private double i;
-    private double v;
     private double r;
 
     public Resistor(double resistance){
@@ -14,23 +13,15 @@ public class Resistor {
     }
 
     public void setV(double voltage) {
-        v = voltage;
-        this.v = v;
+        i = voltage / r;
     }
 
     public double getI() {
-        if (i != 0 && v != 0){
-            i = v / r;
-        }
-        else{
-            i = i;
-        }
         return i;
     }
 
     public double getV() {
-        v = i * r;
-        return v;
+        return i * r;
     }
 
     public double getR() {
