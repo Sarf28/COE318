@@ -8,11 +8,13 @@ public class Resistor {
         this.r = r;
     }
 
-    public void setI(double i) {
+    public void setI(double current) {
+        i = current;
         this.i = i;
     }
 
-    public void setV(double v) {
+    public void setV(double voltage) {
+        v = voltage;
         this.v = v;
     }
 
@@ -40,13 +42,13 @@ public class Resistor {
     }
 
     public static void main(String[] args){
-        
+
         Resistor r1, r2;
-        
+
         System.out.println("Creating a 50 Ohm resistor (r1)");
-        
+
         r1 = new Resistor(50.0);
-        
+
         System.out.println("Its resistance is " + r1.getR() + " Ohms");
 
         System.out.println("Its current is " + r1.getI() + " Amps");
